@@ -55,3 +55,6 @@
 #define PYBRICKS_OPT_NATIVE_MOD                 (0)
 
 #include "../_common/mpconfigport.h"
+
+#undef MICROPY_PY_BUILTINS_BYTEARRAY
+#define MICROPY_PY_BUILTINS_BYTEARRAY (1)
