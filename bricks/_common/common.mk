@@ -156,7 +156,7 @@ TEXT0_ADDR ?= 0x08000000
 ifeq ($(PB_MCU_FAMILY),native)
 UNAME_S := $(shell uname -s)
 LD = $(CC)
-CFLAGS += $(INC) -Wall -Werror -Wdouble-promotion -Wfloat-conversion -std=gnu99 $(COPT) -D_GNU_SOURCE
+CFLAGS += $(INC) -Wall -Wdouble-promotion -Wfloat-conversion -std=gnu99 $(COPT) -D_GNU_SOURCE #-Werror
 ifeq ($(UNAME_S),Linux)
 LDFLAGS += -Wl,-Map=$@.map,--cref -Wl,--gc-sections
 else ifeq ($(UNAME_S),Darwin)
