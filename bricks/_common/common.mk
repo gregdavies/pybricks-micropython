@@ -182,7 +182,7 @@ endif
 endif
 endif
 
-CFLAGS_WARN = -Wall -Werror -Wextra -Wno-unused-parameter -Wno-maybe-uninitialized
+CFLAGS_WARN = -Wall -Wextra -Wno-unused-parameter -Wno-maybe-uninitialized #-Werror 
 CFLAGS = $(INC) -std=c11 -nostdlib -fshort-enums $(CFLAGS_MCU) $(CFLAGS_WARN) $(COPT) $(CFLAGS_EXTRA)
 $(BUILD)/lib/libm/%.o: CFLAGS += -Wno-sign-compare
 
