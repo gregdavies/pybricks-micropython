@@ -1,0 +1,16 @@
+{
+  "name": "Pybricks MoveHub Build Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "postCreateCommand": "python3 -m pip install --upgrade pip && python3 -m pip install pyelftools",
+  "remoteUser": "vscode"
+}
