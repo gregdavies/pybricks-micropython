@@ -60,6 +60,10 @@
 #define MICROPY_PY_BUILTINS_BYTEARRAY (1)
 
 // Override common defaults (disable heavy modules)
+// Remove robotics from module table entirely
+#undef PB_MODULE_ROBOTICS
+#define PB_MODULE_ROBOTICS
+
 #undef PYBRICKS_PY_ROBOTICS
 #define PYBRICKS_PY_ROBOTICS (0)
 
