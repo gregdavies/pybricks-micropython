@@ -72,3 +72,17 @@
 
 #undef PYBRICKS_PY_ROBOTICS_DRIVEBASE_SPIKE
 #define PYBRICKS_PY_ROBOTICS_DRIVEBASE_SPIKE (0)
+
+// --- FORCE REMOVE ROBOTICS MODULE ---
+
+// Remove table entry
+#ifdef PB_MODULE_ROBOTICS
+#undef PB_MODULE_ROBOTICS
+#endif
+#define PB_MODULE_ROBOTICS
+
+// Remove robotics init hook if present
+#ifdef PB_DEFINE_ROBOTICS
+#undef PB_DEFINE_ROBOTICS
+#endif
+#define PB_DEFINE_ROBOTICS
