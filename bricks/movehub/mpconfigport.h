@@ -67,7 +67,7 @@
 #define PYBRICKS_OPT_USE_STACK_END_AS_TOP       (1)
 #define PYBRICKS_OPT_RAW_REPL                   (0)
 #define PYBRICKS_OPT_FLOAT                      (0)
-#define PYBRICKS_OPT_TERSE_ERR                  (1)
+#define PYBRICKS_OPT_TERSE_ERR                  (0)
 #define PYBRICKS_OPT_EXTRA_LEVEL1               (0)
 #define PYBRICKS_OPT_EXTRA_LEVEL2               (0)
 #define PYBRICKS_OPT_CUSTOM_IMPORT              (1)
