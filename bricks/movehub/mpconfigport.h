@@ -55,3 +55,7 @@
 #define PYBRICKS_OPT_NATIVE_MOD                 (0)
 
 #include "../_common/mpconfigport.h"
+
+// Enable bytearray without enabling EXTRA_LEVEL1
+#undef MICROPY_PY_BUILTINS_BYTEARRAY
+#define MICROPY_PY_BUILTINS_BYTEARRAY (1)
