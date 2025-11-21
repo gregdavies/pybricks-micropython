@@ -124,8 +124,8 @@ static mp_obj_t get_pup_data_tuple(mp_obj_t self_in) {
     iodevices_PUPDevice_obj_t *self = MP_OBJ_TO_PTR(self_in);
     void *data = pb_type_device_get_data(self_in, self->last_mode);
 
-    pbio_port_lump_mode_info_t *mode_info;
-    uint8_t current_mode;
+    pbio_port_lump_mode_info_t *mode_info = NULL;
+    uint8_t current_mode = 0;
     uint8_t num_modes;
     lego_device_type_id_t type_id = LEGO_DEVICE_TYPE_ID_ANY_LUMP_UART;
     pb_assert(pbio_port_lump_assert_type_id(self->device_base.lump_dev, &type_id));
