@@ -45,7 +45,7 @@
 
 // Powered Up device support (you need motors + color sensor)
 #define PYBRICKS_PY_PUPDEVICES                  (1)
-#define PYBRICKS_PY_PUPDEVICES_REMOTE           (0)
+#define PYBRICKS_PY_PUPDEVICES_REMOTE           (1)
 
 // ------------------------------------------------------------
 // REMOVE ROBOTICS COMPLETELY (saves flash + fixes link error)
