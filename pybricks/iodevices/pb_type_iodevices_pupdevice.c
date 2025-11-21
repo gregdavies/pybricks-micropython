@@ -202,7 +202,7 @@ static mp_obj_t iodevices_PUPDevice_write(size_t n_args, const mp_obj_t *pos_arg
 
     pbio_port_lump_mode_info_t *mode_info;
     uint8_t current_mode;
-    uint8_t num_modes;
+    uint8_t num_modes = 0;
     lego_device_type_id_t type_id = LEGO_DEVICE_TYPE_ID_ANY_LUMP_UART;
     pb_assert(pbio_port_lump_assert_type_id(self->device_base.lump_dev, &type_id));
     pb_assert(pbio_port_lump_get_info(self->device_base.lump_dev, &num_modes, &current_mode, &mode_info));
