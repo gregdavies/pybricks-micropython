@@ -2,6 +2,7 @@
 // Copyright (c) 2021-2024 The Pybricks Authors
 
 #include "py/mpconfig.h"
+#include <pybricks/iodevices/pupdevices.h>
 
 #if PYBRICKS_PY_PUPDEVICES_REMOTE
 
