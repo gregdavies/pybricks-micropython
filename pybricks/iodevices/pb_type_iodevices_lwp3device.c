@@ -3,7 +3,7 @@
 
 #include "py/mpconfig.h"
 
-#if PYBRICKS_PY_PUPDEVICES_REMOTE
+#if PYBRICKS_PY_IODEVICES_LWP3
 
 #include <stdint.h>
 #include <string.h>
@@ -691,4 +691,4 @@ MP_REGISTER_ROOT_POINTER(uint8_t * notification_buffer);
 
 #endif // PYBRICKS_PY_IODEVICES
 
-#endif // PYBRICKS_PY_PUPDEVICES_REMOTE
+#endif // PYBRICKS_PY_IODEVICES_LWP3
