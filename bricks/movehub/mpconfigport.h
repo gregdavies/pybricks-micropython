@@ -21,7 +21,7 @@
 #define PYBRICKS_PY_COMMON_IMU                  (0)
 #define PYBRICKS_PY_COMMON_KEYPAD               (1)
 #define PYBRICKS_PY_COMMON_KEYPAD_HUB_BUTTONS   (1)
-#define PYBRICKS_PY_COMMON_LIGHT_ARRAY          (0)
+#define PYBRICKS_PY_COMMON_LIGHT_ARRAY          (1)
 #define PYBRICKS_PY_COMMON_LIGHT_MATRIX         (0)
 #define PYBRICKS_PY_COMMON_LOGGER               (0)
 #define PYBRICKS_PY_COMMON_MOTOR_MODEL          (0)
@@ -40,7 +40,7 @@
 #define PYBRICKS_PY_PARAMETERS_BUTTON_REMOTE_ONLY (0)
 #define PYBRICKS_PY_PARAMETERS_ICON             (0)
 #define PYBRICKS_PY_PARAMETERS_IMAGE            (0)
-#define PYBRICKS_PY_DEVICES                     (0)
+#define PYBRICKS_PY_DEVICES                     (1)
 
 // Powered Up device support (you need motors + color sensor)
 #define PYBRICKS_PY_PUPDEVICES                  (1)
