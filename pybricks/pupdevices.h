@@ -9,20 +9,25 @@
 #if PYBRICKS_PY_PUPDEVICES
 
 #include "py/obj.h"
-
-
 #include <pybricks/common/pb_type_device.h>
 
+// Devices actually used
 extern const mp_obj_type_t pb_type_pupdevices_ColorDistanceSensor;
-extern const mp_obj_type_t pb_type_pupdevices_ColorLightMatrix;
-extern const mp_obj_type_t pb_type_pupdevices_ColorSensor;
-extern const mp_obj_type_t pb_type_pupdevices_ForceSensor;
-extern const mp_obj_type_t pb_type_pupdevices_InfraredSensor;
-extern const mp_obj_type_t pb_type_pupdevices_Light;
-extern const mp_obj_type_t pb_type_pupdevices_PFMotor;
-extern const mp_obj_type_t pb_type_pupdevices_Remote;
-extern const mp_obj_type_t pb_type_pupdevices_TiltSensor;
-extern const mp_obj_type_t pb_type_pupdevices_UltrasonicSensor;
+#if PYBRICKS_PY_COMMON_MOTORS
+extern const mp_obj_type_t pb_type_Motor;
+extern const mp_obj_type_t pb_type_DCMotor;
+#endif
+
+// Other devices (commented out to save flash, keep for reference)
+// extern const mp_obj_type_t pb_type_pupdevices_ColorLightMatrix;
+// extern const mp_obj_type_t pb_type_pupdevices_ColorSensor;
+// extern const mp_obj_type_t pb_type_pupdevices_ForceSensor;
+// extern const mp_obj_type_t pb_type_pupdevices_InfraredSensor;
+// extern const mp_obj_type_t pb_type_pupdevices_Light;
+// extern const mp_obj_type_t pb_type_pupdevices_PFMotor;
+// extern const mp_obj_type_t pb_type_pupdevices_Remote;
+// extern const mp_obj_type_t pb_type_pupdevices_TiltSensor;
+// extern const mp_obj_type_t pb_type_pupdevices_UltrasonicSensor;
 
 pb_type_device_obj_base_t *pupdevices_ColorDistanceSensor__get_device(mp_obj_t obj);
 
