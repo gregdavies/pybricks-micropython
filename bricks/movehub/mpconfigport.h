@@ -19,7 +19,7 @@
 #define PYBRICKS_PY_COMMON_COLOR_LIGHT          (1)
 #define PYBRICKS_PY_COMMON_CONTROL              (0)
 #define PYBRICKS_PY_COMMON_IMU                  (0)
-#define PYBRICKS_PY_COMMON_KEYPAD               (0)
+#define PYBRICKS_PY_COMMON_KEYPAD               (1)
 #define PYBRICKS_PY_COMMON_KEYPAD_HUB_BUTTONS   (0)
 #define PYBRICKS_PY_COMMON_LIGHT_ARRAY          (1)
 #define PYBRICKS_PY_COMMON_LIGHT_MATRIX         (0)
