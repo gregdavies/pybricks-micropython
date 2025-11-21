@@ -15,8 +15,8 @@ static const mp_rom_map_elem_t iodevices_globals_table[] = {
     #if PYBRICKS_PY_IODEVICES_I2CDEVICE
     { MP_ROM_QSTR(MP_QSTR_I2CDevice),        MP_ROM_PTR(&pb_type_i2c_device) },
     #endif
-    #if PYBRICKS_PY_PUPDEVICES && PYBRICKS_PY_PUPDEVICES_REMOTE
-    { MP_ROM_QSTR(MP_QSTR_LWP3Device),       MP_ROM_PTR(&pb_type_iodevices_LWP3Device)     },
+    #if PYBRICKS_PY_IODEVICES_LWP3
+    { MP_ROM_QSTR(MP_QSTR_LWP3Device), MP_ROM_PTR(&pb_type_iodevices_LWP3Device) },
     #endif
     #if PYBRICKS_PY_IODEVICES_XBOX_CONTROLLER
     { MP_ROM_QSTR(MP_QSTR_XboxController),   MP_ROM_PTR(&pb_type_iodevices_XboxController) },
